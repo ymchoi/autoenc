@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -49,6 +49,7 @@ namespace autoenc
             if (codec != "hevc")
             {
                 Console.WriteLine(new FileInfo(filepath).Name + " = failed enc to hevc");
+                return;
             }
 
             try
